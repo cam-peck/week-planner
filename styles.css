@@ -44,6 +44,15 @@
   max-width: 800px;
 }
 
+/* Modal */
+.description {
+  resize: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 1.5rem;
+  overflow: hidden;
+}
+
 /* Functional CSS Classes */
 
 .red-line {
@@ -61,4 +70,8 @@
 .justify-center {
   display: flex;
   justify-content: center;
+}
+
+.pb-1-half-rem {
+  padding-bottom: 1.5rem;
 }
