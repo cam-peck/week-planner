@@ -1,5 +1,7 @@
 var $addEntry = document.querySelector('.add-entry-btn');
 var $modal = document.querySelector('.modal');
+var $dayOfWeek = document.querySelector('#day-week');
+var $time = document.querySelector('#time');
 var $exit = document.querySelector('.exit-x');
 var $formSubmit = document.querySelector('.form-submit');
 
@@ -14,6 +16,8 @@ $formSubmit.addEventListener('submit', function (event) {
   data.nextEntryId++;
   data.entries.unshift(newEntry);
   console.log(data);
+  $modal.classList.add('hidden');
+  $formSubmit.reset();
 });
 
 $exit.addEventListener('click', function (event) {
@@ -23,4 +27,9 @@ $exit.addEventListener('click', function (event) {
 $addEntry.addEventListener('click', function (event) {
   console.log('add entry detected');
   $modal.classList.remove('hidden');
+});
+
+$dayOfWeek.addEventListener('input', function (event) {
+  $time.focus();
+  console.log($time.elements);
 });
