@@ -4,13 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week Planner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="tr-layer"></div>
   <div class="container blue-line">
     <header class="text-align-c">
-      <h2>Weekly Planner</h2>
+      <h2 class="font-styling text-color-white">Weekly Planner</h2>
     </header>
     <div class="text-align-c days-of-wk">Days of the week</div>
     <!-- modal -->
@@ -18,9 +24,11 @@
       <div class="modal-content" >
         <!-- form -->
         <div class="text-align-r">
-          <button class="exit-x">x</button>
+          <button class="exit-x">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
         </div>
-        <h1 class="text-align-c">Add Entry</h1>
+        <h1 class="text-align-c text-color-white font-styling mt-0">Add Entry</h1>
         <form class="form-submit text-align-c">
           <div class="row pb-1-half-rem column-half space-between">
             <select required name="day-week" id="day-week">
@@ -39,7 +47,7 @@
             <textarea name="description" class="description column-full" rows="7" placeholder="description"></textarea>
           </div>
           <div class="row pb-1-half-rem justify-end">
-            <input type="submit" name="submit-new" value="Submit">
+            <input type="submit" name="submit-new" value="Submit" class="submit-btn">
           </div>
         </form>
       </div>
