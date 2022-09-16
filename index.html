@@ -15,8 +15,24 @@
     <!-- modal -->
     <div class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <!-- form -->
+        <h1 class="text-align-c">Add Entry</h1>
+        <form class="text-align-c">
+          <label for="day-week"></label>
+          <select required name="day-week" id="day-week">
+            <option disabled selected value="">Day of Week</option>
+            <option value="sunday">Sunday</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+          </select>
+
+          <label for="appt"></label>
+          <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+        </form>
       </div>
     </div>
     <div class="row red-line">
@@ -24,10 +40,6 @@
         <button>Add Entry</button>
       </div>
     </div>
-    <!-- form -->
-    <form>
-
-    </form>
   </div>
   <script src="main.js"></script>
 </body>

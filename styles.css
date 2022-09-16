@@ -1,17 +1,11 @@
+/* Header */
+
 .body {
   margin: 0 auto;
 }
 
 .container {
   max-width: 850px;
-}
-
-.red-line {
-  border: 2px solid red;
-}
-
-.blue-line {
-  border: 2px solid blue;
 }
 
 .row {
@@ -22,6 +16,44 @@
   width: 100%;
 }
 
+.days-of-wk {
+
+}
+
+/* Modal */
+
+/* The Modal (background) */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 25% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 3px;
+  width: 60%;
+  max-width: 800px;
+}
+
+/* Functional CSS Classes */
+
+.red-line {
+  border: 2px solid red;
+}
+
+.blue-line {
+  border: 2px solid blue;
+}
+
 .text-align-c {
   text-align: center;
 }
@@ -29,8 +61,4 @@
 .justify-center {
   display: flex;
   justify-content: center;
-}
-
-.days-of-wk {
-
 }
