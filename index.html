@@ -18,9 +18,17 @@
     <header class="text-align-c">
       <h2 class="font-styling text-color-white">Weekly Planner</h2>
     </header>
-    <div class="text-align-c days-of-wk">Days of the week</div>
+    <div class="row text-align-c days-of-wk">
+      <button class="day-btn" type="button">Sunday</button>
+      <button class="day-btn" type="button">Monday</button>
+      <button class="day-btn" type="button">Tuesday</button>
+      <button class="day-btn" type="button">Wednesday</button>
+      <button class="day-btn" type="button">Thursday</button>
+      <button class="day-btn" type="button">Friday</button>
+      <button class="day-btn" type="button">Saturday</button>
+    </div>
     <!-- modal -->
-    <div class="modal">
+    <div class="modal hidden">
       <div class="modal-content" >
         <!-- form -->
         <div class="text-align-r">
@@ -30,7 +38,7 @@
         </div>
         <h1 class="text-align-c text-color-white font-styling mt-0">Add Entry</h1>
         <form class="form-submit text-align-c">
-          <div class="row pb-1-half-rem column-half space-between">
+          <div class="row pb-1-half-rem space-between ">
             <select required name="day-week" id="day-week">
               <option disabled selected value="">Day of Week</option>
               <option value="sunday">Sunday</option>

@@ -37,9 +37,34 @@ html {
   color: red;
 }
 
+/* Day Buttons */
+
+button.day-btn {
+  flex-basis: calc(100% / 7);
+  background: none;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  color: white;
+  padding: 1rem 0.5rem;
+  margin: 1rem;
+}
+
 /* Modal */
 
 /* The Modal (background) */
+
+select#day-week,
+input#time,
+textarea.description {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+select#day-week,
+input#time {
+  padding: 0.5rem;
+}
 
 .tr-layer {
   z-index: -1;
@@ -78,8 +103,10 @@ html {
   font-size: 1.1rem;
 }
 
-.submit-btn:hover {
+.submit-btn:hover,
+.day-btn:hover {
   color: rgb(171, 188, 207);
+  border-color: rgb(171, 188, 207);
   transition-duration: color 4s ease-in;
 }
 
