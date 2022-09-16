@@ -1,0 +1,36 @@
+.body {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 850px;
+}
+
+.red-line {
+  border: 2px solid red;
+}
+
+.blue-line {
+  border: 2px solid blue;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.text-align-c {
+  text-align: center;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.days-of-wk {
+
+}
