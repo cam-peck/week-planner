@@ -5,7 +5,9 @@ var $formSubmit = document.querySelector('.form-submit');
 
 $formSubmit.addEventListener('submit', function (event) {
   event.preventDefault();
-  var newEntry = {};
+  var newEntry = {
+    dotw: $formSubmit.elements['day-week'].value
+  };
 });
 
 $exit.addEventListener('click', function (event) {
