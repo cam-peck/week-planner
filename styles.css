@@ -20,6 +20,11 @@
 
 }
 
+.exit-x {
+  border: none;
+  background: none;
+}
+
 /* Modal */
 
 /* The Modal (background) */
@@ -55,6 +60,14 @@
 
 /* Functional CSS Classes */
 
+.space-between {
+  justify-content: space-between;
+}
+
+.column-half {
+  width: 50%;
+}
+
 .red-line {
   border: 2px solid red;
 }
@@ -63,13 +76,25 @@
   border: 2px solid blue;
 }
 
+.justify-end {
+  justify-content: end;
+}
+
 .text-align-c {
   text-align: center;
+}
+
+.text-align-r {
+  text-align: right;
 }
 
 .justify-center {
   display: flex;
   justify-content: center;
+}
+
+.gap-1-rem {
+  gap: 1rem;
 }
 
 .pb-1-half-rem {

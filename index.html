@@ -16,9 +16,12 @@
     <div class="modal">
       <div class="modal-content">
         <!-- form -->
+        <div class="text-align-r">
+          <button class="exit-x">x</button>
+        </div>
         <h1 class="text-align-c">Add Entry</h1>
         <form class="text-align-c">
-          <div class="row pb-1-half-rem">
+          <div class="row pb-1-half-rem column-half space-between">
             <label for="day-week"></label>
             <select required name="day-week" id="day-week">
               <option disabled selected value="">Day of Week</option>
@@ -36,7 +39,7 @@
           <div class="row pb-1-half-rem">
             <textarea class="description column-full" rows="7" placeholder="description"></textarea>
           </div>
-          <div class="row pb-1-half-rem">
+          <div class="row pb-1-half-rem justify-end">
             <input type="submit" name="submit-new" value="Submit">
           </div>
         </form>
