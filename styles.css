@@ -1,11 +1,8 @@
 /* Header */
 
-.body {
-  margin: 0 auto;
-}
-
 .container {
   max-width: 850px;
+  margin: 0 auto;
 }
 
 .row {
@@ -14,10 +11,6 @@
 
 .column-full {
   width: 100%;
-}
-
-.days-of-wk {
-
 }
 
 .exit-x {
@@ -56,6 +49,10 @@
   line-height: 1.5;
   padding: 1rem 1.5rem;
   overflow: hidden;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Functional CSS Classes */
