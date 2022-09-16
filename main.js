@@ -6,8 +6,14 @@ var $formSubmit = document.querySelector('.form-submit');
 $formSubmit.addEventListener('submit', function (event) {
   event.preventDefault();
   var newEntry = {
-    dotw: $formSubmit.elements['day-week'].value
+    dotw: $formSubmit.elements['day-week'].value,
+    time: $formSubmit.elements.time.value,
+    desc: $formSubmit.elements.description.value,
+    dataID: data.nextEntryId
   };
+  data.nextEntryId++;
+  data.entries.unshift(newEntry);
+  console.log(data);
 });
 
 $exit.addEventListener('click', function (event) {
