@@ -54,8 +54,52 @@ $dayOfWeek.addEventListener('input', function (event) {
 //             </tbody>
 //           </table>
 //         </div>
-function renderEntry(event){
-  var parentDiv = document.createElement('div')
-  parentDiv.setAttribute('data-view', event.day)
-  var
+
+function renderEntry(entry) {
+  var $parentDiv = document.createElement('div');
+  $parentDiv.setAttribute('data-view', entry.entries.dotw);
+
+  var $firstChildDiv = document.createElement('div');
+  $firstChildDiv.setAttribute('class', 'row');
+  $parentDiv.appendChild($firstChildDiv);
+
+  var $eventsHeader = document.createElement('h3');
+  $eventsHeader.textContent = 'Scheduled Events for ' + entry.entries.dotw;
+  $firstChildDiv.appendChild($eventsHeader);
+
+  var $siblingDiv = document.createElement('div');
+  $siblingDiv.setAttribute('class', 'row');
+  $parentDiv.appendChild($siblingDiv);
+
+  var $table = document.createElement('table');
+
+  var $thead = document.createElement('thead');
+  $table.appendChild($thead);
+
+  var $tr = document.createElement('tr');
+  $thead.appendChild($tr);
+
+  var $thTime = document.createElement('th');
+  $thTime.textContent = 'Time';
+  $tr.appendChild($thTime);
+
+  var $thDescription = document.createElement('th');
+  $thDescription.textContent = 'Description';
+  $tr.appendChild($thDescription);
+
+  var $tbody = document.createElement('tbody');
+  $table.appendChild($tbody);
+
+  var $trBody = document.createElement('tr');
+  $tbody.appendChild($trBody);
+
+  var $tdTime = document.createElement('td');
+  $tdTime.textContent = entry.entries.time;
+  $trBody.appendChild($tdTime);
+
+  var $tdDesc = document.createElement('td');
+  $tdDesc.textContent = entry.entries.desc;
+  $trBody.appendChild($tdDesc);
+
+  return $parentDiv;
 }
