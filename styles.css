@@ -37,6 +37,10 @@ html {
   color: red;
 }
 
+.title {
+  font-size: 5rem;
+}
+
 /* Day Buttons */
 
 button.day-btn {
@@ -186,4 +190,12 @@ input#time {
 
 .mt-0 {
   margin-top: 0;
+}
+
+.padding-5rem {
+  padding-top: 5rem;
+}
+
+.flex-column {
+  flex-direction: column;
 }

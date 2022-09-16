@@ -14,9 +14,9 @@
 </head>
 <body>
   <div class="tr-layer"></div>
-  <div class="container blue-line">
+  <div class="container">
     <header class="text-align-c">
-      <h2 class="font-styling text-color-white">Weekly Planner</h2>
+      <h2 class="title font-styling text-color-white mt-0 padding-5rem">Weekly Planner</h2>
     </header>
     <div class="row text-align-c days-of-wk">
       <button class="day-btn" type="button">Sunday</button>
@@ -60,9 +60,30 @@
         </form>
       </div>
     </div>
-    <div class="row red-line">
+    <div class="row">
       <div class="column-full text-align-c">
         <button class="add-entry-btn">Add Entry</button>
+      </div>
+    </div>
+    <div data-view="sunday-view">
+      <div class="row">
+        <h3>Scheduled Events for Monday</h3>
+      </div>
+      <div class="row">
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10:00</td>
+              <td>Description test</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
